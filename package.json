@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/asimrk/chatBotForBURAK/issues"
   },
-  "homepage": "https://github.com/asimrk/chatBotForBURAK#readme"
+  "homepage": "https://github.com/asimrk/chatBotForBURAK#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  }
 }
