@@ -1,0 +1,19 @@
+{
+  "name": "chatbotforburak",
+  "version": "0.1.0",
+  "description": "Learning by making chat bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asimrk/chatBotForBURAK.git"
+  },
+  "author": "Asim Raza Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asimrk/chatBotForBURAK/issues"
+  },
+  "homepage": "https://github.com/asimrk/chatBotForBURAK#readme"
+}
