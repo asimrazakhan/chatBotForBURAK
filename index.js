@@ -18,7 +18,7 @@ app.get('/', function (req, res) {
 
 // for Facebook verification
 app.get('/webhook/', function (req, res) {
-    if (req.query['hub.verify_token'] === 'Aha_Moment_Labs') {
+    if (req.query['hub.verify_token'] === 'BurakBot') {
         res.send(req.query['hub.challenge'])
     }
     res.send('Error, wrong token')
@@ -54,7 +54,7 @@ app.post('/webhook/', function (req, res) {
     res.sendStatus(200)
 })
 
-var token = "EAACIzSLpZC5QBAHjc6d871FsPeeBbvd8YghIgx0GNLdmD3zGZBSwwEHp7gIWlxdZBeMfC8bC7A2WjZAE0xbBiWutmI4wQZB7ZC91eq0kAQT6YK4rprUEdjY0ivj9upsUQfsD6Ao8Hkrm9isYpfDx2gwcg32TFoqICjQw3nTGZACtwZDZD"
+var token = "EAAYsIbMPI0MBAP9HSJ3AUpC1ZBH3ZBl4dmHVVSvZAgE4zKIkbrm8W2k41z5cBtyX0FL2lpQ1JFHf63PYqAMS5mOJyNPp2Ai9zPDcj4yA1mvzOIqPPYTNM9O4AlY1XqP2lFEpB2C6BIoPUaExryBR8ZAUDYDiVRLBX3KRNweBRwZDZD"
 
 // function to echo back messages - added by Stefan
 
@@ -63,7 +63,7 @@ function sendTextMessage(sender, text) {
         text:text
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/...',
+        url: 'https://graph.facebook.com/v2.8/me/...',
         qs: {access_token:token},
         method: 'POST',
         json: {
@@ -144,7 +144,7 @@ function sendGenericMessage(sender) {
         }
     }
     request({
-        url: 'https://graph.facebook.com/v2.6/me/...',
+        url: 'https://graph.facebook.com/v2.8/me/...',
         qs: {access_token:token},
         method: 'POST',
         json: {
